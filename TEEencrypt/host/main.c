@@ -104,7 +104,7 @@ int main(int argc, char** argv)
 		memcpy(plaintext, op.params[0].tmpref.buffer, MAX_LENGTH);
 		printf("Plaintext : %s\n", plaintext);
 
-		fi = fopen("caesar_plaintext.txt","w");
+		fi = fopen("plaintext.txt","w");
 		fputs(plaintext, fi);
 		fclose(fi);
 	}
