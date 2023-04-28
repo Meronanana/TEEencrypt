@@ -168,7 +168,6 @@ static TEE_Result dec_value(uint32_t param_types,
 static TEE_Result randomkey_get(uint32_t param_types,
 	TEE_Param params[4])
 {
-	char* in = (char*)params[0].memref.buffer;
 	DMSG("randomkey_get call");
 	while(random_key <= 0){
 		TEE_GenerateRandom(&random_key, sizeof(random_key));
